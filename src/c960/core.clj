@@ -1,6 +1,6 @@
 (ns  c960.core)
 
-(defn -main []
+(defn buildc960 []
  ; Build a deck of cards 1 - 8 and shuffle them
 (def fulldeck(shuffle(seq(range 1 9 ))))
 ;First even and first odd card get bishops
@@ -28,4 +28,11 @@
    (= K1 nxtsquare) "K"
    )))
   (println pieceseq)
+  (println "type y for another")
 )
+
+(defn -main []
+  (buildc960)
+  (while (==  0 (compare "y" (read-line)))
+    (buildc960))
+  )
