@@ -15,8 +15,8 @@
 (def R1 (first(sort(remove (set[B1 B2 N1 N2 Q1]) fulldeck) )))
   (def K1 (nth(sort(remove (set[B1 B2 N1 N2 Q1]) fulldeck) )1))
   (def R2 (nth(sort(remove (set[B1 B2 N1 N2 Q1]) fulldeck) )2))
-;print the peice names from 1 to 8
-(def peiceseq(for [nxtsquare (range 1 9)]
+;print the piece names from 1 to 8
+(def pieceseq(for [nxtsquare (range 1 9)]
   (cond
    (= Q1 nxtsquare) "Q"
    (= B1 nxtsquare) "B"
@@ -26,6 +26,6 @@
    (= R1 nxtsquare) "R"
    (= R2 nxtsquare) "R"
    (= K1 nxtsquare) "K"
-)))
- (println peiceseq)
+   )))
+  (println pieceseq)
 )
