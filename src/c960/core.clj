@@ -1,6 +1,6 @@
 (ns  c960.core)
 
-(def pclist '(B B N N Q R K R))
+(def pclist ["Bishop " "Bishop " "Knight " "Knight " "Queen " "Rook " "King " "Rook "])
 
 (defn c960 [] "returns a quasi-random 8 number sequence insuring that the first item is even,the second item is odd and the last 3 items are sorted ascending"
               (let [c960seq (shuffle (range 1 9))
